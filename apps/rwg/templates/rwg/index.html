@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random Word Generator</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <link rel="stylesheet" href="{% static 'time_display/css/style.css' %}">    
+    <script src="{% static 'time_display/js/script.js' %}"></script>
+  </head>
+  <body>
+    <div class='container'>
+    <img src="{% static 'time_display/images/images.jfif' %}" />
+    <p>Random Word (attempt #{{{request.session.counter}}</p>
+    <p>{{unique_id}}</p>
+</div>
+  </body>
