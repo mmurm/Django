@@ -1,0 +1,36 @@
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+ }
+.container{
+    height:900px;
+    width:1800px;
+    margin:0px auto;
+    text-align:center;
+}
+.building{
+    height:200px;
+    width:200px;
+    text-align:top;
+    background-color:white;
+    display:inline-block;
+    vertical-align: top;
+    border:2px solid black;
+    box-shadow: 1px 1px grey;
+    border-radius:4px;
+}
+.activities{
+    height:300px;
+    width:800px;
+    border:2px solid black;
+    box-shadow:1px 1px grey;
+    border-radius:4px;
+    text-align:center;
+    display:inline-block;
+    overflow-y:auto;
+}
