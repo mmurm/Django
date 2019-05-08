@@ -16,38 +16,38 @@
         <input type="number" name="gold_amount" value={{ request.session.gold }} >
     </div>
         <div class = "building">
-            <h3>Metal Detecting</h3>
+            <h4>Metal Detecting Adventure</h4>
             <a>(earns 10-20 golds)</a>
             <form action="/ninja_gold/process_money" method="post">
                 {% csrf_token %}
-                <input type="hidden" name="building" value="Metal Detecting" />
+                <input type="hidden" name="building" value="Metal Detecting Adventure" />
                 <input type="submit" value="Find Gold!"/>
             </form>
         </div>
         <div class = "building">
-            <h3>Back Alley Dice</h3>
+            <h4>Back Alley Dice game</h4>
             <a>(earns 5-10 golds)</a>
             <form action="/ninja_gold/process_money" method="post">
                 {% csrf_token %}
-                <input type="hidden" name="building" value="Back Alley Dice" />
+                <input type="hidden" name="building" value="Back Alley Dice game" />
                 <input type="submit" value="Find Gold!"/>
             </form>
         </div>
          <div class = "building">
-            <h4>Couch Cusion Raiding</h4>
+            <h4>Couch Cusion Raid</h4>
             <a>(earns 2-5 golds)</a>
             <form action="/ninja_gold/process_money" method="post">
                 {% csrf_token %}
-                <input type="hidden" name="building" value="Couch Cusion Raiding" />
+                <input type="hidden" name="building" value="Couch Cusion Raid" />
                 <input type="submit" value="Find Gold!"/>
             </form>
         </div>
         <div class = "building">
-            <h3>Casino BlackJack</h3>
+            <h4>Casino Card Game</h4>
             <a>(earns/takes 0-50 golds)</a>
             <form action="/ninja_gold/process_money" method="post">
                 {% csrf_token %}
-                <input type="hidden" name="building" value="Casino" />
+                <input type="hidden" name="building" value="Casino Card Game" />
                 <input type="submit" value="Find Gold!"/>
             </form>
         </div>
