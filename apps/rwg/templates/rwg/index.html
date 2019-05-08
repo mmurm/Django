@@ -10,8 +10,10 @@
   </head>
   <body>
     <div class='container'>
-    <img src="{% static 'time_display/images/images.jfif' %}" />
-    <p>Random Word (attempt #{{{request.session.counter}}</p>
+    <p>Random Word (attempt #{{request.session.counter}})</p>
     <p>{{unique_id}}</p>
+    <button value="Refresh Page" onClick="window.location.reload();">Refresh Page</button>
+    <button onclick="window.location.href = 'http://localhost:8000/rwg/reset/';">Reset Counter</button>
+
 </div>
   </body>
