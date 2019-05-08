@@ -3,7 +3,7 @@ from django.utils.crypto import get_random_string
 
 def index(request):
     context = {
-    "unique_id" : get_random_string(length=14)
+    "unique_id" : get_random_string(length=14),
     }
     if 'counter' in request.session:
         request.session['counter'] +=1

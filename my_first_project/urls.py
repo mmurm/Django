@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^1st/', include('apps.my_first_app.urls')),
     url(r'^time_display/', include('apps.time_display.urls')),
     url(r'^rwg/', include('apps.rwg.urls')),
+    url(r'^ninja_gold/', include('apps.ninja_gold.urls')),
 ]
